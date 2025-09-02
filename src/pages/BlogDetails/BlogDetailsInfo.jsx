@@ -1,5 +1,6 @@
-/* eslint-disable jsx-a11y/anchor-is-valid */
+
 import React from "react";
+import { Link } from "react-router-dom";
 
 const BlogDetailsInfo = () => {
   return (
@@ -26,21 +27,21 @@ const BlogDetailsInfo = () => {
                 </div>
                 <ul className="blog-details__meta list-unstyled">
                   <li>
-                    <a href="blog-details.html">
+                    <Link to="/blog-details">
                       <span className="far fa-calendar-alt"></span>March 18,
                       2025
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a href="blog-details.html">
+                    <Link to="/blog-details">
                       <span className="fal fa-comments"></span>89 Comments
-                    </a>
+                    </Link>
                   </li>
                 </ul>
                 <h3 className="blog-details__title">
-                  <a href="blog-details.html">
+                  <Link to="/blog-details">
                     Top IT Trends in 2025. What Businesses Need to Know
-                  </a>
+                  </Link>
                 </h3>
                 <p className="blog-details__text">
                   Artificial Intelligence (AI) is set to revolutionize business
@@ -200,29 +201,29 @@ const BlogDetailsInfo = () => {
                     <h3 className="blog-details__tag-title">Tags:</h3>
                     <ul className="blog-details__tag-list list-unstyled">
                       <li>
-                        <a href="#">Marketing</a>
+                        <Link to="#">Marketing</Link>
                       </li>
                       <li>
-                        <a href="#">Branding</a>
+                        <Link to="#">Branding</Link>
                       </li>
                       <li>
-                        <a href="#">SEO</a>
+                        <Link to="#">SEO</Link>
                       </li>
                     </ul>
                   </div>
                   <div className="blog-details__share-box">
                     <h3 className="blog-details__share-title">Follow Me:</h3>
                     <div className="blog-details__share">
-                      <a href="#">
+                      <Link to="#">
                         <span className="icon-facebook"></span>
-                      </a>
-                      <a href="#">
+                      </Link>
+                      <Link to="#">
                         <span className="icon-dribble"></span>
-                      </a>
+                      </Link>
 
-                      <a href="#">
+                      <Link to="#">
                         <span className="icon-linkedin"></span>
-                      </a>
+                      </Link>
                     </div>
                   </div>
                 </div>
@@ -237,7 +238,7 @@ const BlogDetailsInfo = () => {
                     <div className="blog-details__prev-content">
                       <div className="blog-details__prev-arrow">
                         <span className="icon-left-arrow"></span>
-                        <a href="#">Prev Blog</a>
+                        <Link to="#">Prev Blog</Link>
                       </div>
                       <h4 className="blog-details__prev-title">
                         What Businesses Need to
@@ -249,7 +250,7 @@ const BlogDetailsInfo = () => {
                   <div className="blog-details__next-box">
                     <div className="blog-details__next-content">
                       <div className="blog-details__next-arrow">
-                        <a href="#">Next Blog</a>
+                        <Link to="#">Next Blog</Link>
                         <span className="icon-right-arrow"></span>
                       </div>
                       <h4 className="blog-details__next-title">
@@ -289,12 +290,12 @@ const BlogDetailsInfo = () => {
                           strong workforce?
                         </p>
                         <div className="comment-one__btn-box">
-                          <a
-                            href="blog-details.html"
+                          <Link
+                            to="/blog-details"
                             className="comment-one__btn"
                           >
                             <span className="fas fa-share"></span>Reply
-                          </a>
+                          </Link>
                         </div>
                       </div>
                     </div>
@@ -319,12 +320,12 @@ const BlogDetailsInfo = () => {
                           than a complete replacement
                         </p>
                         <div className="comment-one__btn-box">
-                          <a
-                            href="blog-details.html"
+                          <Link
+                            to="/blog-details"
                             className="comment-one__btn"
                           >
                             <span className="fas fa-share"></span>Reply
-                          </a>
+                          </Link>
                         </div>
                       </div>
                     </div>
@@ -345,12 +346,12 @@ const BlogDetailsInfo = () => {
                           risky to rely too much on AI for decision-making?
                         </p>
                         <div className="comment-one__btn-box">
-                          <a
-                            href="blog-details.html"
+                          <Link
+                            to="/blog-details"
                             className="comment-one__btn"
                           >
                             <span className="fas fa-share"></span>Reply
-                          </a>
+                          </Link>
                         </div>
                       </div>
                     </div>
@@ -491,24 +492,24 @@ const BlogDetailsInfo = () => {
                 </div>
                 <ul className="sidebar__category-list list-unstyled">
                   <li>
-                    <a href="#">
+                    <Link to="#">
                       Web Design & Development <span>(15)</span>
-                    </a>
+                    </Link>
                   </li>
                   <li className="active">
-                    <a href="#">
+                    <Link to="#">
                       Products Design <span>(20)</span>
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a href="#">
+                    <Link to="#">
                       Artificial Intelligence <span>(42)</span>
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a href="#">
+                    <Link to="#">
                       Technology <span>(89)</span>
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </div>
@@ -529,9 +530,9 @@ const BlogDetailsInfo = () => {
                         <span className="icon-calendar"></span>March 18, 2025
                       </p>
                       <h3 className="sidebar__post-title">
-                        <a href="blog-details.html">
+                        <Link to="/blog-details">
                           Adapting to Digital Marketing Trends: Staying Ahead
-                        </a>
+                        </Link>
                       </h3>
                     </div>
                   </li>
@@ -544,9 +545,9 @@ const BlogDetailsInfo = () => {
                         <span className="icon-calendar"></span>April 18, 2025
                       </p>
                       <h3 className="sidebar__post-title">
-                        <a href="blog-details.html">
+                        <Link to="/blog-details">
                           Standing Out in a Competitive Market:
-                        </a>
+                        </Link>
                       </h3>
                     </div>
                   </li>
@@ -559,9 +560,9 @@ const BlogDetailsInfo = () => {
                         <span className="icon-calendar"></span>Jun 18, 2025
                       </p>
                       <h3 className="sidebar__post-title">
-                        <a href="blog-details.html">
+                        <Link to="/blog-details">
                           The Importance of Accurate Performance Reporting
-                        </a>
+                        </Link>
                       </h3>
                     </div>
                   </li>
@@ -576,25 +577,25 @@ const BlogDetailsInfo = () => {
                 </div>
                 <ul className="sidebar__tags-list clearfix list-unstyled">
                   <li>
-                    <a href="#">Development</a>
+                    <Link to="#">Development</Link>
                   </li>
                   <li>
-                    <a href="#">Innovation</a>
+                    <Link to="#">Innovation</Link>
                   </li>
                   <li>
-                    <a href="#">Analytics</a>
+                    <Link to="#">Analytics</Link>
                   </li>
                   <li>
-                    <a href="#">Marketing</a>
+                    <Link to="#">Marketing</Link>
                   </li>
                   <li>
-                    <a href="#">Innovation</a>
+                    <Link to="#">Innovation</Link>
                   </li>
                   <li>
-                    <a href="#">Technology</a>
+                    <Link to="#">Technology</Link>
                   </li>
                   <li>
-                    <a href="#">Ui Design</a>
+                    <Link to="#">Ui Design</Link>
                   </li>
                 </ul>
               </div>
@@ -641,16 +642,16 @@ const BlogDetailsInfo = () => {
                 <div className="sidebar__client-social-box">
                   <p className="sidebar__client-social-title">Follow Me</p>
                   <div className="sidebar__client-social">
-                    <a href="#">
+                    <Link to="#">
                       <span className="icon-facebook"></span>
-                    </a>
-                    <a href="#">
+                    </Link>
+                    <Link to="#">
                       <span className="icon-dribble"></span>
-                    </a>
+                    </Link>
 
-                    <a href="#">
+                    <Link to="#">
                       <span className="icon-linkedin"></span>
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </div>

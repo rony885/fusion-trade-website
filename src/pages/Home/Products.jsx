@@ -6,44 +6,6 @@ import "slick-carousel/slick/slick-theme.css";
 import productData from "../../productData.js";
 import { Link } from "react-router-dom";
 
-// const teamData = [
-//   {
-//     id: 1,
-//     name: "Sophia Bennett",
-//     role: "CEO & Founder",
-//     image: "assets/images/team/team-2-1.jpg",
-//     social: ["facebook", "dribble", "linkedin"],
-//   },
-//   {
-//     id: 2,
-//     name: "Liam Johnson",
-//     role: "Operations Manager",
-//     image: "assets/images/team/team-2-2.jpg",
-//     social: ["facebook", "dribble", "linkedin"],
-//   },
-//   {
-//     id: 3,
-//     name: "Ethan Miller",
-//     role: "Lead Designer",
-//     image: "assets/images/team/team-2-3.jpg",
-//     social: ["facebook", "dribble", "linkedin"],
-//   },
-//   {
-//     id: 4,
-//     name: "Olivia Smith",
-//     role: "Lead Designer",
-//     image: "assets/images/team/team-2-2.jpg",
-//     social: ["facebook", "dribble", "linkedin"],
-//   },
-//   {
-//     id: 5,
-//     name: "Ryan Wilson",
-//     role: "Lead Designer",
-//     image: "assets/images/team/team-2-3.jpg",
-//     social: ["facebook", "dribble", "linkedin"],
-//   },
-// ];
-
 // Custom Arrows
 const NextArrow = ({ onClick }) => (
   <div className="custom-arrow custom-next" onClick={onClick}>

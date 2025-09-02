@@ -1,207 +1,175 @@
 import React from "react";
-import styled from "styled-components";
+import { Link } from "react-router-dom";
 
-const Footer = () => {
-  const currentYear = new Date().getFullYear();
-
+const ContactInfo = () => {
   return (
-    <Wrapper>
-      <footer className="site-footer-two">
-        {/* Shapes */}
-        <div className="site-footer-two__shape-1"></div>
-        <div className="site-footer-two__shape-2"></div>
-        <div className="site-footer-two__shape-3"></div>
-
-        {/* Top Section */}
-        <div className="site-footer-two__top">
-          <div className="container">
-            <div className="row">
-              {/* Contact Info */}
-              <div
-                className="col-xl-4 col-lg-6 col-md-6 wow fadeInUp"
-                data-wow-delay="200ms"
-              >
-                <div className="footer-widget-two__quick-links">
-                  <ul className="list-unstyled site-footer-two__contact-list">
-                    <li>
-                      <div className="site-footer-two__contact-icon">
-                        <span className="icon-contact"></span>
+    <section className="contact-one">
+      <div
+        className="contact-one__bg-shape"
+        style={{
+          backgroundImage: `url('/assets/images/shapes/contact-one-bg-shape.png')`,
+        }}
+      ></div>
+      <div className="container">
+        <div className="row">
+          <div className="col-xl-6 col-lg-6">
+            <div
+              className="contact-one__left wow slideInLeft"
+              data-wow-delay="100ms"
+              data-wow-duration="2500ms"
+            >
+              <div className="contact-one__left-shape-1"></div>
+              <div className="contact-one__left-shape-2"></div>
+              <h3 className="contact-one__from-title">How Can We Help You?</h3>
+              <form className="contact-form-validated contact-one__form">
+                <div className="row">
+                  <div className="col-xl-6 col-lg-6">
+                    <h4 className="contact-one__input-title">Full Name</h4>
+                    <div className="contact-one__input-box">
+                      <div className="contact-one__input-icon">
+                        <span className="icon-user-1"></span>
                       </div>
-                      <div className="site-footer-two__contact-content">
-                        <h5 className="site-footer-two__contact-title">
-                          Contact Info
-                        </h5>
-                        <p className="site-footer-two__contact-info">
-                          <a
-                            className="site-footer-two__contact-mail"
-                            href="mailto:info@fusiontradebd.com"
-                          >
-                            info@fusiontradebd.com
-                          </a>
-                          <a
-                            className="site-footer-two__contact-phone"
-                            href="tel:01919171888"
-                          >
-                            01919171888
-                          </a>
-                        </p>
-                      </div>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-
-              {/* Dhaka Office */}
-              <div
-                className="col-xl-4 col-lg-6 col-md-6 wow fadeInUp"
-                data-wow-delay="300ms"
-              >
-                <div className="footer-widget-two__support">
-                  <ul className="list-unstyled site-footer-two__contact-list">
-                    <li>
-                      <div className="site-footer-two__contact-icon">
-                        <span className="icon-pin"></span>
-                      </div>
-                      <div className="site-footer-two__contact-content">
-                        <h5 className="site-footer-two__contact-title">
-                          Dhaka Office
-                        </h5>
-                        <p className="site-footer-two__contact-info">
-                          Ga -27/2 A, Shahjadpur, <br />
-                          Gulshan, Dhaka-1212
-                        </p>
-                      </div>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-
-              {/* Mymensingh Office */}
-              <div
-                className="col-xl-4 col-lg-6 col-md-6 wow fadeInUp"
-                data-wow-delay="400ms"
-              >
-                <div className="footer-widget-two__services">
-                  <ul className="list-unstyled site-footer-two__contact-list">
-                    <li>
-                      <div className="site-footer-two__contact-icon">
-                        <span className="icon-pin"></span>
-                      </div>
-                      <div className="site-footer-two__contact-content">
-                        <h5 className="site-footer-two__contact-title">
-                          Mymensingh Office
-                        </h5>
-                        <p className="site-footer-two__contact-info">
-                          32 Jubed Ali Road, Kanchijuly, <br />
-                          Mymensingh-2200
-                        </p>
-                      </div>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        {/* Bottom Section */}
-        <div className="site-footer-two__bottom">
-          <div className="container">
-            <div className="row">
-              <div className="col-xl-12">
-                <div className="site-footer-two__bottom-inner">
-                  {/* Copyright */}
-                  <div className="site-footer-two__copyright">
-                    <div className="copyright">
-                      <a
-                        rel="noopener noreferrer"
-                        href="https://www.ekattorit.com/"
-                        target="_blank"
-                      >
-                        <small className="small">
-                          <small
-                            className="footer text-white"
-                            style={{ fontSize: "16px" }}
-                          >
-                            © Copyright {currentYear},
-                          </small>
-                          &nbsp;
-                          <span className="text-white">
-                            Designed &amp; Developed By&nbsp;
-                          </span>
-                          <span style={{ color: "red" }}>EKATTOR</span>
-                          <span style={{ color: "green" }}> iT</span>
-                        </small>
-                      </a>
+                      <input
+                        type="text"
+                        name="name"
+                        placeholder="Thomas Alison"
+                        required=""
+                      />
                     </div>
                   </div>
-
-                  {/* Social Links */}
-                  <div className="site-footer-two__social-box">
-                    <h4 className="site-footer-two__social-title">
-                      Follow Us:
-                    </h4>
-                    <div className="site-footer-two__social-box-inner">
-                      <a
-                        rel="noopener noreferrer"
-                        href="https://www.facebook.com/"
-                        target="_blank"
-                      >
-                        <span className="icon-facebook"></span>
-                      </a>
-                      <a
-                        rel="noopener noreferrer"
-                        href="https://web.whatsapp.com/"
-                        target="_blank"
-                      >
-                        <span className="fab fa-whatsapp"></span>
-                      </a>
-                      <a
-                        rel="noopener noreferrer"
-                        href="https://www.instagram.com/"
-                        target="_blank"
-                      >
-                        <span className="fab fa-instagram"></span>
-                      </a>
+                  <div className="col-xl-6 col-lg-6">
+                    <h4 className="contact-one__input-title">Email Address</h4>
+                    <div className="contact-one__input-box">
+                      <div className="contact-one__input-icon">
+                        <span className="icon-email"></span>
+                      </div>
+                      <input
+                        type="email"
+                        name="email"
+                        placeholder="thomas@domain.com"
+                        required=""
+                      />
+                    </div>
+                  </div>
+                  <div className="col-xl-6 col-lg-6">
+                    <h4 className="contact-one__input-title">Phone Number</h4>
+                    <div className="contact-one__input-box">
+                      <div className="contact-one__input-icon">
+                        <span className="icon-phone-call"></span>
+                      </div>
+                      <input
+                        type="text"
+                        name="Phone"
+                        placeholder="+12 (00) 123 4567 890"
+                        required=""
+                      />
+                    </div>
+                  </div>
+                  <div className="col-xl-6 col-lg-6">
+                    <h4 className="contact-one__input-title">Subject</h4>
+                    <div className="contact-one__input-box">
+                      <div className="contact-one__input-icon">
+                        <span className="icon-note"></span>{" "}
+                      </div>
+                      <input
+                        type="text"
+                        name="subject"
+                        placeholder="Enter your subject"
+                        required
+                      />
                     </div>
                   </div>
                 </div>
+                <div className="col-xl-12">
+                  <h4 className="contact-one__input-title">Inquiry about</h4>
+                  <div className="contact-one__input-box text-message-box">
+                    <div className="contact-one__input-icon">
+                      <span className="icon-edit"></span>
+                    </div>
+                    <textarea
+                      name="message"
+                      placeholder="Write your message"
+                    ></textarea>
+                  </div>
+                  <div className="contact-one__btn-box">
+                    <button type="submit" className="thm-btn">
+                      <span>Submit Now</span>
+                      <i className="icon-right-arrow"></i>
+                    </button>
+                  </div>
+                </div>
+              </form>
+              <div className="result"></div>
+            </div>
+          </div>
+          <div className="col-xl-6 col-lg-6">
+            <div className="contact-one__right">
+              <div className="section-title text-left sec-title-animation animation-style2">
+                <div className="section-title__tagline-box">
+                  <div className="section-title__tagline-shape-1"></div>
+                  <span className="section-title__tagline">Get In Touch</span>
+                  <div className="section-title__tagline-shape-2"></div>
+                </div>
+                <h2 className="section-title__title title-animation">
+                  Conversation <span>–</span>
+                  <br />
+                  <span>Reach Out Anytime</span>
+                </h2>
               </div>
+              <p className="contact-one__text">
+                We're here to listen! Whether you have questions,
+                <br />
+                feedback, or just want to say hello, feel free to reach out.
+              </p>
+              <ul className="contact-one__list list-unstyled">
+                <li>
+                  <div className="icon">
+                    <span className="icon-pin"></span>
+                  </div>
+                  <div className="content">
+                    <h4>Location</h4>
+                    <p>
+                      1629 N. Dixie Avenue, <br />
+                      Kentucky, 42701
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <div className="icon">
+                    <span className="icon-mail"></span>
+                  </div>
+                  <div className="content">
+                    <h4>Email Us</h4>
+                    <p>
+                      <Link to="mailto:info@domain.com">info@domain.com</Link>
+                    </p>
+                    <p>
+                      <Link to="mailto:support@domain.com">support@domain.com</Link>
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <div className="icon">
+                    <span className="icon-phone-call"></span>
+                  </div>
+                  <div className="content">
+                    <h4>Contact</h4>
+                    <p>
+                      Tel:
+                      <Link to="tel:1200456789000">+12 (00) 456 7890 00</Link>
+                    </p>
+                    <p>
+                      Mob: <Link to="tel:9900567780">+99 (00) 567 780</Link>
+                    </p>
+                  </div>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
-      </footer>
-    </Wrapper>
+      </div>
+    </section>
   );
 };
 
-const Wrapper = styled.section`
-  .site-footer-two__top {
-    position: relative;
-    display: block;
-    padding: 10px 0 50px;
-  }
-  .footer-widget-two__quick-links {
-    position: relative;
-    display: block;
-    margin-top: 77px !important;
-    margin-left: 50px;
-  }
-
-  .site-footer-two__contact-list li:before {
-    content: "";
-    position: absolute;
-    top: -40px;
-    left: 0;
-    right: 169px;
-    height: 0px;
-    background: rgb(143, 136, 255);
-    background: linear-gradient(
-      90deg,
-      rgba(143, 136, 255, 1) 14%,
-      rgba(143, 136, 255, 0) 100%
-    );
-  }
-`;
-
-export default Footer;
+export default ContactInfo;

@@ -5,7 +5,7 @@ const Process = () => {
   return (
     <section className="process-one">
       <div className="process-one__shape-1">
-        <img src="assets/images/shapes/process-one-shape-1.png" alt="" />
+        <img src="/assets/images/shapes/process-one-shape-1.png" alt="" />
       </div>
       <div className="process-one__shape-2"></div>
       <div className="process-one__shape-3"></div>

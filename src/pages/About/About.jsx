@@ -4,7 +4,7 @@ import AboutInfo from "./AboutInfo";
 import Choose from "./Choose";
 import Process from "./Process";
 import Testimonial from "./Testimonial";
-// import Team from "./Team";
+import Team from "./Team";
 
 const About = () => {
   return (
@@ -12,7 +12,7 @@ const About = () => {
       <AboutHeroArea />
       <AboutInfo />
       <Choose />
-      {/* <Team /> */}
+      <Team />
       <Process />
       <Testimonial />
     </>
