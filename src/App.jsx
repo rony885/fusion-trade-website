@@ -16,6 +16,7 @@ import Contact from "./pages/Contact/Contact";
 import Blog from "./pages/Blog/Blog";
 import Product from "./pages/Product/Product";
 import BlogDetails from "./pages/BlogDetails/BlogDetails";
+import Gallery from "./pages/Gallery/Gallery";
 
 function App() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -55,8 +56,9 @@ function App() {
             <Route path="/about" element={<About />} />
             <Route path="/services" element={<Service />} />
             <Route path="/products" element={<Product />} />
-            <Route path="/blog" element={<Blog />} />Z
-            <Route path="/blog-details" element={<BlogDetails />} />Z
+            <Route path="/gallery" element={<Gallery />} />
+            <Route path="/blog" element={<Blog />} />
+            <Route path="/blog-details" element={<BlogDetails />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="*" element={<Error />} />
           </Routes>
