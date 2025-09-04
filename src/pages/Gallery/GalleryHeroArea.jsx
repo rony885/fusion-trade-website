@@ -7,7 +7,7 @@ const GalleryHeroArea = () => {
       <div
         className="page-header__bg"
         style={{
-          backgroundImage: `url('/assets/images/backgrounds/page-header-bg.jpg')`,
+          backgroundImage: "url(/assets/images/backgrounds/page-header-bg.jpg)",
         }}
       ></div>
       <div className="container">
