@@ -61,19 +61,19 @@ const Choose = () => {
             >
               <div className="why-choose-one__img">
                 <img
-                  src="assets/images/resources/why-choose-one-img-1.png"
+                  src="/assets/images/resources/why-choose-one-img-1.png"
                   alt=""
                 />
               </div>
               <div className="why-choose-one__shape-1 img-bounce">
                 <img
-                  src="assets/images/shapes/why-choose-one-shape-1.png"
+                  src="/assets/images/shapes/why-choose-one-shape-1.png"
                   alt=""
                 />
               </div>
               <div className="why-choose-one__shape-2 float-bob-x">
                 <img
-                  src="assets/images/shapes/why-choose-one-shape-2.png"
+                  src="/assets/images/shapes/why-choose-one-shape-2.png"
                   alt=""
                 />
               </div>

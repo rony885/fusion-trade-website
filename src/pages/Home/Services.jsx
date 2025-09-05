@@ -102,7 +102,7 @@ const Services = () => {
                         <img src={service.image} alt="Services Icon" />
                       </div>
                       <h3 className="services-three__title">
-                        <Link href={service.link}>{service.title}</Link>
+                        <Link to={service.link}>{service.title}</Link>
                       </h3>
                     </div>
                     <p className="services-three__text">{service.text}</p>

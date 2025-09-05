@@ -1,6 +1,5 @@
-/* eslint-disable jsx-a11y/anchor-has-content */
-/* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
+import { Link } from "react-router-dom";
 
 const ProductInfo = () => {
   return (
@@ -82,33 +81,33 @@ const ProductInfo = () => {
                                   </ul>
                                   <ul className="single-product-style1__info">
                                     <li>
-                                      <a href="#" title="Add to Wishlist">
+                                      <Link to="#" title="Add to Wishlist">
                                         <i className="fa fa-regular fa-heart"></i>
-                                      </a>
+                                      </Link>
                                     </li>
                                     <li>
-                                      <a href="#" title="Add to cart">
+                                      <Link to="#" title="Add to cart">
                                         <i className="fa fa-solid fa-cart-plus"></i>
-                                      </a>
+                                      </Link>
                                     </li>
                                     <li>
-                                      <a href="#" title="Quick View">
+                                      <Link to="#" title="Quick View">
                                         <i className="fa fa-regular fa-eye"></i>
-                                      </a>
+                                      </Link>
                                     </li>
                                     <li>
-                                      <a href="#" title="Compare">
+                                      <Link to="#" title="Compare">
                                         <i className="fa fa-solid fa-repeat"></i>
-                                      </a>
+                                      </Link>
                                     </li>
                                   </ul>
                                 </div>
                                 <div className="single-product-style1__content">
                                   <div className="single-product-style1__content-left">
                                     <h4>
-                                      <a href="product-details.html">
+                                      <Link to="product-details.html">
                                         rendering metallic ai
-                                      </a>
+                                      </Link>
                                     </h4>
                                     <p>$33.00</p>
                                   </div>
@@ -136,33 +135,33 @@ const ProductInfo = () => {
                                   />
                                   <ul className="single-product-style1__info">
                                     <li>
-                                      <a href="#" title="Add to Wishlist">
+                                      <Link to="#" title="Add to Wishlist">
                                         <i className="fa fa-regular fa-heart"></i>
-                                      </a>
+                                      </Link>
                                     </li>
                                     <li>
-                                      <a href="#" title="Add to cart">
+                                      <Link to="#" title="Add to cart">
                                         <i className="fa fa-solid fa-cart-plus"></i>
-                                      </a>
+                                      </Link>
                                     </li>
                                     <li>
-                                      <a href="#" title="Quick View">
+                                      <Link to="#" title="Quick View">
                                         <i className="fa fa-regular fa-eye"></i>
-                                      </a>
+                                      </Link>
                                     </li>
                                     <li>
-                                      <a href="#" title="Compare">
+                                      <Link to="#" title="Compare">
                                         <i className="fa fa-solid fa-repeat"></i>
-                                      </a>
+                                      </Link>
                                     </li>
                                   </ul>
                                 </div>
                                 <div className="single-product-style1__content">
                                   <div className="single-product-style1__content-left">
                                     <h4>
-                                      <a href="product-details.html">
+                                      <Link to="product-details.html">
                                         3d render robot
-                                      </a>
+                                      </Link>
                                     </h4>
                                     <p>$50.00</p>
                                   </div>
@@ -195,33 +194,33 @@ const ProductInfo = () => {
                                   </ul>
                                   <ul className="single-product-style1__info">
                                     <li>
-                                      <a href="#" title="Add to Wishlist">
+                                      <Link to="#" title="Add to Wishlist">
                                         <i className="fa fa-regular fa-heart"></i>
-                                      </a>
+                                      </Link>
                                     </li>
                                     <li>
-                                      <a href="#" title="Add to cart">
+                                      <Link to="#" title="Add to cart">
                                         <i className="fa fa-solid fa-cart-plus"></i>
-                                      </a>
+                                      </Link>
                                     </li>
                                     <li>
-                                      <a href="#" title="Quick View">
+                                      <Link to="#" title="Quick View">
                                         <i className="fa fa-regular fa-eye"></i>
-                                      </a>
+                                      </Link>
                                     </li>
                                     <li>
-                                      <a href="#" title="Compare">
+                                      <Link to="#" title="Compare">
                                         <i className="fa fa-solid fa-repeat"></i>
-                                      </a>
+                                      </Link>
                                     </li>
                                   </ul>
                                 </div>
                                 <div className="single-product-style1__content">
                                   <div className="single-product-style1__content-left">
                                     <h4>
-                                      <a href="product-details.html">
+                                      <Link to="product-details.html">
                                         motorcycle helmet
-                                      </a>
+                                      </Link>
                                     </h4>
                                     <p>
                                       <del>$33.00</del> $28.00
@@ -251,33 +250,33 @@ const ProductInfo = () => {
                                   />
                                   <ul className="single-product-style1__info">
                                     <li>
-                                      <a href="#" title="Add to Wishlist">
+                                      <Link to="#" title="Add to Wishlist">
                                         <i className="fa fa-regular fa-heart"></i>
-                                      </a>
+                                      </Link>
                                     </li>
                                     <li>
-                                      <a href="#" title="Add to cart">
+                                      <Link to="#" title="Add to cart">
                                         <i className="fa fa-solid fa-cart-plus"></i>
-                                      </a>
+                                      </Link>
                                     </li>
                                     <li>
-                                      <a href="#" title="Quick View">
+                                      <Link to="#" title="Quick View">
                                         <i className="fa fa-regular fa-eye"></i>
-                                      </a>
+                                      </Link>
                                     </li>
                                     <li>
-                                      <a href="#" title="Compare">
+                                      <Link to="#" title="Compare">
                                         <i className="fa fa-solid fa-repeat"></i>
-                                      </a>
+                                      </Link>
                                     </li>
                                   </ul>
                                 </div>
                                 <div className="single-product-style1__content">
                                   <div className="single-product-style1__content-left">
                                     <h4>
-                                      <a href="product-details.html">
+                                      <Link to="product-details.html">
                                         robot gesturing
-                                      </a>
+                                      </Link>
                                     </h4>
                                     <p>$40.00</p>
                                   </div>
@@ -310,33 +309,33 @@ const ProductInfo = () => {
                                   </ul>
                                   <ul className="single-product-style1__info">
                                     <li>
-                                      <a href="#" title="Add to Wishlist">
+                                      <Link to="#" title="Add to Wishlist">
                                         <i className="fa fa-regular fa-heart"></i>
-                                      </a>
+                                      </Link>
                                     </li>
                                     <li>
-                                      <a href="#" title="Add to cart">
+                                      <Link to="#" title="Add to cart">
                                         <i className="fa fa-solid fa-cart-plus"></i>
-                                      </a>
+                                      </Link>
                                     </li>
                                     <li>
-                                      <a href="#" title="Quick View">
+                                      <Link to="#" title="Quick View">
                                         <i className="fa fa-regular fa-eye"></i>
-                                      </a>
+                                      </Link>
                                     </li>
                                     <li>
-                                      <a href="#" title="Compare">
+                                      <Link to="#" title="Compare">
                                         <i className="fa fa-solid fa-repeat"></i>
-                                      </a>
+                                      </Link>
                                     </li>
                                   </ul>
                                 </div>
                                 <div className="single-product-style1__content">
                                   <div className="single-product-style1__content-left">
                                     <h4>
-                                      <a href="product-details.html">
+                                      <Link to="product-details.html">
                                         ski helmet with visor
-                                      </a>
+                                      </Link>
                                     </h4>
                                     <p>
                                       <del>$25.00</del>$20.00
@@ -366,33 +365,33 @@ const ProductInfo = () => {
                                   />
                                   <ul className="single-product-style1__info">
                                     <li>
-                                      <a href="#" title="Add to Wishlist">
+                                      <Link to="#" title="Add to Wishlist">
                                         <i className="fa fa-regular fa-heart"></i>
-                                      </a>
+                                      </Link>
                                     </li>
                                     <li>
-                                      <a href="#" title="Add to cart">
+                                      <Link to="#" title="Add to cart">
                                         <i className="fa fa-solid fa-cart-plus"></i>
-                                      </a>
+                                      </Link>
                                     </li>
                                     <li>
-                                      <a href="#" title="Quick View">
+                                      <Link to="#" title="Quick View">
                                         <i className="fa fa-regular fa-eye"></i>
-                                      </a>
+                                      </Link>
                                     </li>
                                     <li>
-                                      <a href="#" title="Compare">
+                                      <Link to="#" title="Compare">
                                         <i className="fa fa-solid fa-repeat"></i>
-                                      </a>
+                                      </Link>
                                     </li>
                                   </ul>
                                 </div>
                                 <div className="single-product-style1__content">
                                   <div className="single-product-style1__content-left">
                                     <h4>
-                                      <a href="product-details.html">
+                                      <Link to="product-details.html">
                                         snowboard boot
-                                      </a>
+                                      </Link>
                                     </h4>
                                     <p>$35.00</p>
                                   </div>
@@ -425,33 +424,33 @@ const ProductInfo = () => {
                                   </ul>
                                   <ul className="single-product-style1__info">
                                     <li>
-                                      <a href="#" title="Add to Wishlist">
+                                      <Link to="#" title="Add to Wishlist">
                                         <i className="fa fa-regular fa-heart"></i>
-                                      </a>
+                                      </Link>
                                     </li>
                                     <li>
-                                      <a href="#" title="Add to cart">
+                                      <Link to="#" title="Add to cart">
                                         <i className="fa fa-solid fa-cart-plus"></i>
-                                      </a>
+                                      </Link>
                                     </li>
                                     <li>
-                                      <a href="#" title="Quick View">
+                                      <Link to="#" title="Quick View">
                                         <i className="fa fa-regular fa-eye"></i>
-                                      </a>
+                                      </Link>
                                     </li>
                                     <li>
-                                      <a href="#" title="Compare">
+                                      <Link to="#" title="Compare">
                                         <i className="fa fa-solid fa-repeat"></i>
-                                      </a>
+                                      </Link>
                                     </li>
                                   </ul>
                                 </div>
                                 <div className="single-product-style1__content">
                                   <div className="single-product-style1__content-left">
                                     <h4>
-                                      <a href="product-details.html">
+                                      <Link to="product-details.html">
                                         rendering metallic ai
-                                      </a>
+                                      </Link>
                                     </h4>
                                     <p>$33.00</p>
                                   </div>
@@ -479,33 +478,33 @@ const ProductInfo = () => {
                                   />
                                   <ul className="single-product-style1__info">
                                     <li>
-                                      <a href="#" title="Add to Wishlist">
+                                      <Link to="#" title="Add to Wishlist">
                                         <i className="fa fa-regular fa-heart"></i>
-                                      </a>
+                                      </Link>
                                     </li>
                                     <li>
-                                      <a href="#" title="Add to cart">
+                                      <Link to="#" title="Add to cart">
                                         <i className="fa fa-solid fa-cart-plus"></i>
-                                      </a>
+                                      </Link>
                                     </li>
                                     <li>
-                                      <a href="#" title="Quick View">
+                                      <Link to="#" title="Quick View">
                                         <i className="fa fa-regular fa-eye"></i>
-                                      </a>
+                                      </Link>
                                     </li>
                                     <li>
-                                      <a href="#" title="Compare">
+                                      <Link to="#" title="Compare">
                                         <i className="fa fa-solid fa-repeat"></i>
-                                      </a>
+                                      </Link>
                                     </li>
                                   </ul>
                                 </div>
                                 <div className="single-product-style1__content">
                                   <div className="single-product-style1__content-left">
                                     <h4>
-                                      <a href="product-details.html">
+                                      <Link to="product-details.html">
                                         3d render robot
-                                      </a>
+                                      </Link>
                                     </h4>
                                     <p>$50.00</p>
                                   </div>
@@ -538,33 +537,33 @@ const ProductInfo = () => {
                                   </ul>
                                   <ul className="single-product-style1__info">
                                     <li>
-                                      <a href="#" title="Add to Wishlist">
+                                      <Link to="#" title="Add to Wishlist">
                                         <i className="fa fa-regular fa-heart"></i>
-                                      </a>
+                                      </Link>
                                     </li>
                                     <li>
-                                      <a href="#" title="Add to cart">
+                                      <Link to="#" title="Add to cart">
                                         <i className="fa fa-solid fa-cart-plus"></i>
-                                      </a>
+                                      </Link>
                                     </li>
                                     <li>
-                                      <a href="#" title="Quick View">
+                                      <Link to="#" title="Quick View">
                                         <i className="fa fa-regular fa-eye"></i>
-                                      </a>
+                                      </Link>
                                     </li>
                                     <li>
-                                      <a href="#" title="Compare">
+                                      <Link to="#" title="Compare">
                                         <i className="fa fa-solid fa-repeat"></i>
-                                      </a>
+                                      </Link>
                                     </li>
                                   </ul>
                                 </div>
                                 <div className="single-product-style1__content">
                                   <div className="single-product-style1__content-left">
                                     <h4>
-                                      <a href="product-details.html">
+                                      <Link to="product-details.html">
                                         motorcycle helmet
-                                      </a>
+                                      </Link>
                                     </h4>
                                     <p>
                                       <del>$33.00</del> $28.00
@@ -594,33 +593,33 @@ const ProductInfo = () => {
                                   />
                                   <ul className="single-product-style1__info">
                                     <li>
-                                      <a href="#" title="Add to Wishlist">
+                                      <Link to="#" title="Add to Wishlist">
                                         <i className="fa fa-regular fa-heart"></i>
-                                      </a>
+                                      </Link>
                                     </li>
                                     <li>
-                                      <a href="#" title="Add to cart">
+                                      <Link to="#" title="Add to cart">
                                         <i className="fa fa-solid fa-cart-plus"></i>
-                                      </a>
+                                      </Link>
                                     </li>
                                     <li>
-                                      <a href="#" title="Quick View">
+                                      <Link to="#" title="Quick View">
                                         <i className="fa fa-regular fa-eye"></i>
-                                      </a>
+                                      </Link>
                                     </li>
                                     <li>
-                                      <a href="#" title="Compare">
+                                      <Link to="#" title="Compare">
                                         <i className="fa fa-solid fa-repeat"></i>
-                                      </a>
+                                      </Link>
                                     </li>
                                   </ul>
                                 </div>
                                 <div className="single-product-style1__content">
                                   <div className="single-product-style1__content-left">
                                     <h4>
-                                      <a href="product-details.html">
+                                      <Link to="product-details.html">
                                         robot gesturing
-                                      </a>
+                                      </Link>
                                     </h4>
                                     <p>$40.00</p>
                                   </div>
@@ -653,33 +652,33 @@ const ProductInfo = () => {
                                   </ul>
                                   <ul className="single-product-style1__info">
                                     <li>
-                                      <a href="#" title="Add to Wishlist">
+                                      <Link to="#" title="Add to Wishlist">
                                         <i className="fa fa-regular fa-heart"></i>
-                                      </a>
+                                      </Link>
                                     </li>
                                     <li>
-                                      <a href="#" title="Add to cart">
+                                      <Link to="#" title="Add to cart">
                                         <i className="fa fa-solid fa-cart-plus"></i>
-                                      </a>
+                                      </Link>
                                     </li>
                                     <li>
-                                      <a href="#" title="Quick View">
+                                      <Link to="#" title="Quick View">
                                         <i className="fa fa-regular fa-eye"></i>
-                                      </a>
+                                      </Link>
                                     </li>
                                     <li>
-                                      <a href="#" title="Compare">
+                                      <Link to="#" title="Compare">
                                         <i className="fa fa-solid fa-repeat"></i>
-                                      </a>
+                                      </Link>
                                     </li>
                                   </ul>
                                 </div>
                                 <div className="single-product-style1__content">
                                   <div className="single-product-style1__content-left">
                                     <h4>
-                                      <a href="product-details.html">
+                                      <Link to="product-details.html">
                                         ski helmet with visor
-                                      </a>
+                                      </Link>
                                     </h4>
                                     <p>
                                       <del>$25.00</del>$20.00
@@ -709,33 +708,33 @@ const ProductInfo = () => {
                                   />
                                   <ul className="single-product-style1__info">
                                     <li>
-                                      <a href="#" title="Add to Wishlist">
+                                      <Link to="#" title="Add to Wishlist">
                                         <i className="fa fa-regular fa-heart"></i>
-                                      </a>
+                                      </Link>
                                     </li>
                                     <li>
-                                      <a href="#" title="Add to cart">
+                                      <Link to="#" title="Add to cart">
                                         <i className="fa fa-solid fa-cart-plus"></i>
-                                      </a>
+                                      </Link>
                                     </li>
                                     <li>
-                                      <a href="#" title="Quick View">
+                                      <Link to="#" title="Quick View">
                                         <i className="fa fa-regular fa-eye"></i>
-                                      </a>
+                                      </Link>
                                     </li>
                                     <li>
-                                      <a href="#" title="Compare">
+                                      <Link to="#" title="Compare">
                                         <i className="fa fa-solid fa-repeat"></i>
-                                      </a>
+                                      </Link>
                                     </li>
                                   </ul>
                                 </div>
                                 <div className="single-product-style1__content">
                                   <div className="single-product-style1__content-left">
                                     <h4>
-                                      <a href="product-details.html">
+                                      <Link to="product-details.html">
                                         snowboard boot
-                                      </a>
+                                      </Link>
                                     </h4>
                                     <p>$35.00</p>
                                   </div>
@@ -791,32 +790,32 @@ const ProductInfo = () => {
                                       </div>
                                       <div className="single-product-style2__text">
                                         <h4>
-                                          <a href="product-details.html">
+                                          <Link to="product-details.html">
                                             rendering metallic ai
-                                          </a>
+                                          </Link>
                                         </h4>
                                         <p>$33.00</p>
                                       </div>
                                       <ul className="single-product-style2__info">
                                         <li>
-                                          <a href="#" title="Add to Wishlist">
+                                          <Link to="#" title="Add to Wishlist">
                                             <i className="fa fa-regular fa-heart"></i>
-                                          </a>
+                                          </Link>
                                         </li>
                                         <li>
-                                          <a href="#" title="Add to cart">
+                                          <Link to="#" title="Add to cart">
                                             <i className="fa fa-solid fa-cart-plus"></i>
-                                          </a>
+                                          </Link>
                                         </li>
                                         <li>
-                                          <a href="#" title="Quick View">
+                                          <Link to="#" title="Quick View">
                                             <i className="fa fa-regular fa-eye"></i>
-                                          </a>
+                                          </Link>
                                         </li>
                                         <li>
-                                          <a href="#" title="Compare">
+                                          <Link to="#" title="Compare">
                                             <i className="fa fa-solid fa-repeat"></i>
-                                          </a>
+                                          </Link>
                                         </li>
                                       </ul>
                                     </div>
@@ -852,32 +851,32 @@ const ProductInfo = () => {
                                       </div>
                                       <div className="single-product-style2__text">
                                         <h4>
-                                          <a href="product-details.html">
+                                          <Link to="product-details.html">
                                             3d render robot
-                                          </a>
+                                          </Link>
                                         </h4>
                                         <p>$50.00</p>
                                       </div>
                                       <ul className="single-product-style2__info">
                                         <li>
-                                          <a href="#" title="Add to Wishlist">
+                                          <Link to="#" title="Add to Wishlist">
                                             <i className="fa fa-regular fa-heart"></i>
-                                          </a>
+                                          </Link>
                                         </li>
                                         <li>
-                                          <a href="#" title="Add to cart">
+                                          <Link to="#" title="Add to cart">
                                             <i className="fa fa-solid fa-cart-plus"></i>
-                                          </a>
+                                          </Link>
                                         </li>
                                         <li>
-                                          <a href="#" title="Quick View">
+                                          <Link to="#" title="Quick View">
                                             <i className="fa fa-regular fa-eye"></i>
-                                          </a>
+                                          </Link>
                                         </li>
                                         <li>
-                                          <a href="#" title="Compare">
+                                          <Link to="#" title="Compare">
                                             <i className="fa fa-solid fa-repeat"></i>
-                                          </a>
+                                          </Link>
                                         </li>
                                       </ul>
                                     </div>
@@ -913,32 +912,32 @@ const ProductInfo = () => {
                                       </div>
                                       <div className="single-product-style2__text">
                                         <h4>
-                                          <a href="product-details.html">
+                                          <Link to="product-details.html">
                                             motorcycle helmet
-                                          </a>
+                                          </Link>
                                         </h4>
                                         <p>$40.00</p>
                                       </div>
                                       <ul className="single-product-style2__info">
                                         <li>
-                                          <a href="#" title="Add to Wishlist">
+                                          <Link to="#" title="Add to Wishlist">
                                             <i className="fa fa-regular fa-heart"></i>
-                                          </a>
+                                          </Link>
                                         </li>
                                         <li>
-                                          <a href="#" title="Add to cart">
+                                          <Link to="#" title="Add to cart">
                                             <i className="fa fa-solid fa-cart-plus"></i>
-                                          </a>
+                                          </Link>
                                         </li>
                                         <li>
-                                          <a href="#" title="Quick View">
+                                          <Link to="#" title="Quick View">
                                             <i className="fa fa-regular fa-eye"></i>
-                                          </a>
+                                          </Link>
                                         </li>
                                         <li>
-                                          <a href="#" title="Compare">
+                                          <Link to="#" title="Compare">
                                             <i className="fa fa-solid fa-repeat"></i>
-                                          </a>
+                                          </Link>
                                         </li>
                                       </ul>
                                     </div>
@@ -979,9 +978,9 @@ const ProductInfo = () => {
                                       </div>
                                       <div className="single-product-style2__text">
                                         <h4>
-                                          <a href="product-details.html">
+                                          <Link to="product-details.html">
                                             robot gesturing
-                                          </a>
+                                          </Link>
                                         </h4>
                                         <p>
                                           <del>$33.00</del>$28.00
@@ -989,24 +988,24 @@ const ProductInfo = () => {
                                       </div>
                                       <ul className="single-product-style2__info">
                                         <li>
-                                          <a href="#" title="Add to Wishlist">
+                                          <Link to="#" title="Add to Wishlist">
                                             <i className="fa fa-regular fa-heart"></i>
-                                          </a>
+                                          </Link>
                                         </li>
                                         <li>
-                                          <a href="#" title="Add to cart">
+                                          <Link to="#" title="Add to cart">
                                             <i className="fa fa-solid fa-cart-plus"></i>
-                                          </a>
+                                          </Link>
                                         </li>
                                         <li>
-                                          <a href="#" title="Quick View">
+                                          <Link to="#" title="Quick View">
                                             <i className="fa fa-regular fa-eye"></i>
-                                          </a>
+                                          </Link>
                                         </li>
                                         <li>
-                                          <a href="#" title="Compare">
+                                          <Link to="#" title="Compare">
                                             <i className="fa fa-solid fa-repeat"></i>
-                                          </a>
+                                          </Link>
                                         </li>
                                       </ul>
                                     </div>
@@ -1047,9 +1046,9 @@ const ProductInfo = () => {
                                       </div>
                                       <div className="single-product-style2__text">
                                         <h4>
-                                          <a href="product-details.html">
+                                          <Link to="product-details.html">
                                             ski helmet with visor
-                                          </a>
+                                          </Link>
                                         </h4>
                                         <p>
                                           <del>$25.00</del>$20.00
@@ -1057,24 +1056,24 @@ const ProductInfo = () => {
                                       </div>
                                       <ul className="single-product-style2__info">
                                         <li>
-                                          <a href="#" title="Add to Wishlist">
+                                          <Link to="#" title="Add to Wishlist">
                                             <i className="fa fa-regular fa-heart"></i>
-                                          </a>
+                                          </Link>
                                         </li>
                                         <li>
-                                          <a href="#" title="Add to cart">
+                                          <Link to="#" title="Add to cart">
                                             <i className="fa fa-solid fa-cart-plus"></i>
-                                          </a>
+                                          </Link>
                                         </li>
                                         <li>
-                                          <a href="#" title="Quick View">
+                                          <Link to="#" title="Quick View">
                                             <i className="fa fa-regular fa-eye"></i>
-                                          </a>
+                                          </Link>
                                         </li>
                                         <li>
-                                          <a href="#" title="Compare">
+                                          <Link to="#" title="Compare">
                                             <i className="fa fa-solid fa-repeat"></i>
-                                          </a>
+                                          </Link>
                                         </li>
                                       </ul>
                                     </div>
@@ -1110,32 +1109,32 @@ const ProductInfo = () => {
                                       </div>
                                       <div className="single-product-style2__text">
                                         <h4>
-                                          <a href="product-details.html">
+                                          <Link to="product-details.html">
                                             snowboard boot
-                                          </a>
+                                          </Link>
                                         </h4>
                                         <p>$35.00</p>
                                       </div>
                                       <ul className="single-product-style2__info">
                                         <li>
-                                          <a href="#" title="Add to Wishlist">
+                                          <Link to="#" title="Add to Wishlist">
                                             <i className="fa fa-regular fa-heart"></i>
-                                          </a>
+                                          </Link>
                                         </li>
                                         <li>
-                                          <a href="#" title="Add to cart">
+                                          <Link to="#" title="Add to cart">
                                             <i className="fa fa-solid fa-cart-plus"></i>
-                                          </a>
+                                          </Link>
                                         </li>
                                         <li>
-                                          <a href="#" title="Quick View">
+                                          <Link to="#" title="Quick View">
                                             <i className="fa fa-regular fa-eye"></i>
-                                          </a>
+                                          </Link>
                                         </li>
                                         <li>
-                                          <a href="#" title="Compare">
+                                          <Link to="#" title="Compare">
                                             <i className="fa fa-solid fa-repeat"></i>
-                                          </a>
+                                          </Link>
                                         </li>
                                       </ul>
                                     </div>
@@ -1176,32 +1175,32 @@ const ProductInfo = () => {
                                       </div>
                                       <div className="single-product-style2__text">
                                         <h4>
-                                          <a href="product-details.html">
+                                          <Link to="product-details.html">
                                             rendering metallic ai
-                                          </a>
+                                          </Link>
                                         </h4>
                                         <p>$33.00</p>
                                       </div>
                                       <ul className="single-product-style2__info">
                                         <li>
-                                          <a href="#" title="Add to Wishlist">
+                                          <Link to="#" title="Add to Wishlist">
                                             <i className="fa fa-regular fa-heart"></i>
-                                          </a>
+                                          </Link>
                                         </li>
                                         <li>
-                                          <a href="#" title="Add to cart">
+                                          <Link to="#" title="Add to cart">
                                             <i className="fa fa-solid fa-cart-plus"></i>
-                                          </a>
+                                          </Link>
                                         </li>
                                         <li>
-                                          <a href="#" title="Quick View">
+                                          <Link to="#" title="Quick View">
                                             <i className="fa fa-regular fa-eye"></i>
-                                          </a>
+                                          </Link>
                                         </li>
                                         <li>
-                                          <a href="#" title="Compare">
+                                          <Link to="#" title="Compare">
                                             <i className="fa fa-solid fa-repeat"></i>
-                                          </a>
+                                          </Link>
                                         </li>
                                       </ul>
                                     </div>
@@ -1237,32 +1236,32 @@ const ProductInfo = () => {
                                       </div>
                                       <div className="single-product-style2__text">
                                         <h4>
-                                          <a href="product-details.html">
+                                          <Link to="product-details.html">
                                             3d render robot
-                                          </a>
+                                          </Link>
                                         </h4>
                                         <p>$50.00</p>
                                       </div>
                                       <ul className="single-product-style2__info">
                                         <li>
-                                          <a href="#" title="Add to Wishlist">
+                                          <Link to="#" title="Add to Wishlist">
                                             <i className="fa fa-regular fa-heart"></i>
-                                          </a>
+                                          </Link>
                                         </li>
                                         <li>
-                                          <a href="#" title="Add to cart">
+                                          <Link to="#" title="Add to cart">
                                             <i className="fa fa-solid fa-cart-plus"></i>
-                                          </a>
+                                          </Link>
                                         </li>
                                         <li>
-                                          <a href="#" title="Quick View">
+                                          <Link to="#" title="Quick View">
                                             <i className="fa fa-regular fa-eye"></i>
-                                          </a>
+                                          </Link>
                                         </li>
                                         <li>
-                                          <a href="#" title="Compare">
+                                          <Link to="#" title="Compare">
                                             <i className="fa fa-solid fa-repeat"></i>
-                                          </a>
+                                          </Link>
                                         </li>
                                       </ul>
                                     </div>
@@ -1298,32 +1297,32 @@ const ProductInfo = () => {
                                       </div>
                                       <div className="single-product-style2__text">
                                         <h4>
-                                          <a href="product-details.html">
+                                          <Link to="product-details.html">
                                             motorcycle helmet
-                                          </a>
+                                          </Link>
                                         </h4>
                                         <p>$40.00</p>
                                       </div>
                                       <ul className="single-product-style2__info">
                                         <li>
-                                          <a href="#" title="Add to Wishlist">
+                                          <Link to="#" title="Add to Wishlist">
                                             <i className="fa fa-regular fa-heart"></i>
-                                          </a>
+                                          </Link>
                                         </li>
                                         <li>
-                                          <a href="#" title="Add to cart">
+                                          <Link to="#" title="Add to cart">
                                             <i className="fa fa-solid fa-cart-plus"></i>
-                                          </a>
+                                          </Link>
                                         </li>
                                         <li>
-                                          <a href="#" title="Quick View">
+                                          <Link to="#" title="Quick View">
                                             <i className="fa fa-regular fa-eye"></i>
-                                          </a>
+                                          </Link>
                                         </li>
                                         <li>
-                                          <a href="#" title="Compare">
+                                          <Link to="#" title="Compare">
                                             <i className="fa fa-solid fa-repeat"></i>
-                                          </a>
+                                          </Link>
                                         </li>
                                       </ul>
                                     </div>
@@ -1364,9 +1363,9 @@ const ProductInfo = () => {
                                       </div>
                                       <div className="single-product-style2__text">
                                         <h4>
-                                          <a href="product-details.html">
+                                          <Link to="product-details.html">
                                             robot gesturing
-                                          </a>
+                                          </Link>
                                         </h4>
                                         <p>
                                           <del>$33.00</del>$28.00
@@ -1374,24 +1373,24 @@ const ProductInfo = () => {
                                       </div>
                                       <ul className="single-product-style2__info">
                                         <li>
-                                          <a href="#" title="Add to Wishlist">
+                                          <Link to="#" title="Add to Wishlist">
                                             <i className="fa fa-regular fa-heart"></i>
-                                          </a>
+                                          </Link>
                                         </li>
                                         <li>
-                                          <a href="#" title="Add to cart">
+                                          <Link to="#" title="Add to cart">
                                             <i className="fa fa-solid fa-cart-plus"></i>
-                                          </a>
+                                          </Link>
                                         </li>
                                         <li>
-                                          <a href="#" title="Quick View">
+                                          <Link to="#" title="Quick View">
                                             <i className="fa fa-regular fa-eye"></i>
-                                          </a>
+                                          </Link>
                                         </li>
                                         <li>
-                                          <a href="#" title="Compare">
+                                          <Link to="#" title="Compare">
                                             <i className="fa fa-solid fa-repeat"></i>
-                                          </a>
+                                          </Link>
                                         </li>
                                       </ul>
                                     </div>
@@ -1432,9 +1431,9 @@ const ProductInfo = () => {
                                       </div>
                                       <div className="single-product-style2__text">
                                         <h4>
-                                          <a href="product-details.html">
+                                          <Link to="product-details.html">
                                             ski helmet with visor
-                                          </a>
+                                          </Link>
                                         </h4>
                                         <p>
                                           <del>$25.00</del>$20.00
@@ -1442,24 +1441,24 @@ const ProductInfo = () => {
                                       </div>
                                       <ul className="single-product-style2__info">
                                         <li>
-                                          <a href="#" title="Add to Wishlist">
+                                          <Link to="#" title="Add to Wishlist">
                                             <i className="fa fa-regular fa-heart"></i>
-                                          </a>
+                                          </Link>
                                         </li>
                                         <li>
-                                          <a href="#" title="Add to cart">
+                                          <Link to="#" title="Add to cart">
                                             <i className="fa fa-solid fa-cart-plus"></i>
-                                          </a>
+                                          </Link>
                                         </li>
                                         <li>
-                                          <a href="#" title="Quick View">
+                                          <Link to="#" title="Quick View">
                                             <i className="fa fa-regular fa-eye"></i>
-                                          </a>
+                                          </Link>
                                         </li>
                                         <li>
-                                          <a href="#" title="Compare">
+                                          <Link to="#" title="Compare">
                                             <i className="fa fa-solid fa-repeat"></i>
-                                          </a>
+                                          </Link>
                                         </li>
                                       </ul>
                                     </div>
@@ -1495,32 +1494,32 @@ const ProductInfo = () => {
                                       </div>
                                       <div className="single-product-style2__text">
                                         <h4>
-                                          <a href="product-details.html">
+                                          <Link to="product-details.html">
                                             snowboard boot
-                                          </a>
+                                          </Link>
                                         </h4>
                                         <p>$35.00</p>
                                       </div>
                                       <ul className="single-product-style2__info">
                                         <li>
-                                          <a href="#" title="Add to Wishlist">
+                                          <Link to="#" title="Add to Wishlist">
                                             <i className="fa fa-regular fa-heart"></i>
-                                          </a>
+                                          </Link>
                                         </li>
                                         <li>
-                                          <a href="#" title="Add to cart">
+                                          <Link to="#" title="Add to cart">
                                             <i className="fa fa-solid fa-cart-plus"></i>
-                                          </a>
+                                          </Link>
                                         </li>
                                         <li>
-                                          <a href="#" title="Quick View">
+                                          <Link to="#" title="Quick View">
                                             <i className="fa fa-regular fa-eye"></i>
-                                          </a>
+                                          </Link>
                                         </li>
                                         <li>
-                                          <a href="#" title="Compare">
+                                          <Link to="#" title="Compare">
                                             <i className="fa fa-solid fa-repeat"></i>
-                                          </a>
+                                          </Link>
                                         </li>
                                       </ul>
                                     </div>
@@ -1561,9 +1560,9 @@ const ProductInfo = () => {
                                       </div>
                                       <div className="single-product-style2__text">
                                         <h4>
-                                          <a href="product-details.html">
+                                          <Link to="product-details.html">
                                             rendering metallic ai
-                                          </a>
+                                          </Link>
                                         </h4>
                                         <p>
                                           <del>$25.00</del>$20.00
@@ -1571,24 +1570,24 @@ const ProductInfo = () => {
                                       </div>
                                       <ul className="single-product-style2__info">
                                         <li>
-                                          <a href="#" title="Add to Wishlist">
+                                          <Link to="#" title="Add to Wishlist">
                                             <i className="fa fa-regular fa-heart"></i>
-                                          </a>
+                                          </Link>
                                         </li>
                                         <li>
-                                          <a href="#" title="Add to cart">
+                                          <Link to="#" title="Add to cart">
                                             <i className="fa fa-solid fa-cart-plus"></i>
-                                          </a>
+                                          </Link>
                                         </li>
                                         <li>
-                                          <a href="#" title="Quick View">
+                                          <Link to="#" title="Quick View">
                                             <i className="fa fa-regular fa-eye"></i>
-                                          </a>
+                                          </Link>
                                         </li>
                                         <li>
-                                          <a href="#" title="Compare">
+                                          <Link to="#" title="Compare">
                                             <i className="fa fa-solid fa-repeat"></i>
-                                          </a>
+                                          </Link>
                                         </li>
                                       </ul>
                                     </div>
@@ -1624,32 +1623,32 @@ const ProductInfo = () => {
                                       </div>
                                       <div className="single-product-style2__text">
                                         <h4>
-                                          <a href="product-details.html">
+                                          <Link to="product-details.html">
                                             3d render robot
-                                          </a>
+                                          </Link>
                                         </h4>
                                         <p>$35.00</p>
                                       </div>
                                       <ul className="single-product-style2__info">
                                         <li>
-                                          <a href="#" title="Add to Wishlist">
+                                          <Link to="#" title="Add to Wishlist">
                                             <i className="fa fa-regular fa-heart"></i>
-                                          </a>
+                                          </Link>
                                         </li>
                                         <li>
-                                          <a href="#" title="Add to cart">
+                                          <Link to="#" title="Add to cart">
                                             <i className="fa fa-solid fa-cart-plus"></i>
-                                          </a>
+                                          </Link>
                                         </li>
                                         <li>
-                                          <a href="#" title="Quick View">
+                                          <Link to="#" title="Quick View">
                                             <i className="fa fa-regular fa-eye"></i>
-                                          </a>
+                                          </Link>
                                         </li>
                                         <li>
-                                          <a href="#" title="Compare">
+                                          <Link to="#" title="Compare">
                                             <i className="fa fa-solid fa-repeat"></i>
-                                          </a>
+                                          </Link>
                                         </li>
                                       </ul>
                                     </div>
@@ -1668,23 +1667,23 @@ const ProductInfo = () => {
                 </div>
                 <ul className="styled-pagination text-center clearfix list-unstyled">
                   <li className="arrow prev active">
-                    <a href="#">
+                    <Link to="#">
                       <span className="icon-left-arrow"></span>
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a href="#">1</a>
+                    <Link to="#">1</Link>
                   </li>
                   <li>
-                    <a href="#">2</a>
+                    <Link to="#">2</Link>
                   </li>
                   <li>
-                    <a href="#">3</a>
+                    <Link to="#">3</Link>
                   </li>
                   <li className="arrow next">
-                    <a href="#">
+                    <Link to="#">
                       <span className="icon-right-arrow"></span>
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </div>
@@ -1718,19 +1717,19 @@ const ProductInfo = () => {
                 <h3 className="product__sidebar-title">Categories</h3>
                 <ul className="list-unstyled">
                   <li>
-                    <a href="#">A Tradition of Healing</a>
+                    <Link to="#">A Tradition of Healing</Link>
                   </li>
                   <li className="active">
-                    <a href="#">Compassionate Care</a>
+                    <Link to="#">Compassionate Care</Link>
                   </li>
                   <li>
-                    <a href="#">Caring for You, Always</a>
+                    <Link to="#">Caring for You, Always</Link>
                   </li>
                   <li>
-                    <a href="#">Where Health Matters</a>
+                    <Link to="#">Where Health Matters</Link>
                   </li>
                   <li>
-                    <a href="#">Environtment Recyle</a>
+                    <Link to="#">Environtment Recyle</Link>
                   </li>
                 </ul>
               </div>
@@ -1744,14 +1743,14 @@ const ProductInfo = () => {
                         src="assets/images/shop/product-thumb-1.png"
                         alt="Product"
                       />
-                      <a href="#">
+                      <Link to="#">
                         <i className="fa fa-link" aria-hidden="true"></i>
-                      </a>
+                      </Link>
                     </div>
                     <div className="content">
                       <div className="title">
                         <h5>
-                          <a href="#">metallic ai</a>
+                          <Link to="#">metallic ai</Link>
                         </h5>
                       </div>
                       <div className="price">
@@ -1772,14 +1771,14 @@ const ProductInfo = () => {
                         src="assets/images/shop/product-thumb-2.png"
                         alt="Product"
                       />
-                      <a href="#">
+                      <Link to="#">
                         <i className="fa fa-link" aria-hidden="true"></i>
-                      </a>
+                      </Link>
                     </div>
                     <div className="content">
                       <div className="title">
                         <h5>
-                          <a href="#">3d render robot</a>
+                          <Link to="#">3d render robot</Link>
                         </h5>
                       </div>
                       <div className="price">
@@ -1800,14 +1799,14 @@ const ProductInfo = () => {
                         src="assets/images/shop/product-thumb-3.png"
                         alt="Product"
                       />
-                      <a href="#">
+                      <Link to="#">
                         <i className="fa fa-link" aria-hidden="true"></i>
-                      </a>
+                      </Link>
                     </div>
                     <div className="content">
                       <div className="title">
                         <h5>
-                          <a href="#">motorcycle helmet</a>
+                          <Link to="#">motorcycle helmet</Link>
                         </h5>
                       </div>
                       <div className="price">
@@ -1828,14 +1827,14 @@ const ProductInfo = () => {
                         src="assets/images/shop/product-thumb-4.png"
                         alt="Product"
                       />
-                      <a href="#">
+                      <Link to="#">
                         <i className="fa fa-link" aria-hidden="true"></i>
-                      </a>
+                      </Link>
                     </div>
                     <div className="content">
                       <div className="title">
                         <h5>
-                          <a href="#">robot gesturing</a>
+                          <Link to="#">robot gesturing</Link>
                         </h5>
                       </div>
                       <div className="price">
@@ -1856,12 +1855,12 @@ const ProductInfo = () => {
               <div className="shop-product-tags product__sidebar-single">
                 <h3 className="product__sidebar-title">Product Tags</h3>
                 <div className="shop-product__tags-list">
-                  <a href="#">Development</a>
-                  <a href="#">Innovation</a>
-                  <a href="#">Analytics</a>
-                  <a href="#">Marketing</a>
-                  <a href="#">Innovation</a>
-                  <a href="#">Technology</a>
+                  <Link to="#">Development</Link>
+                  <Link to="#">Innovation</Link>
+                  <Link to="#">Analytics</Link>
+                  <Link to="#">Marketing</Link>
+                  <Link to="#">Innovation</Link>
+                  <Link to="#">Technology</Link>
                 </div>
               </div>
 

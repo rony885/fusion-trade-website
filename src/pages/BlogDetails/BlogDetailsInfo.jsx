@@ -1,4 +1,3 @@
-
 import React from "react";
 import { Link } from "react-router-dom";
 
@@ -104,7 +103,7 @@ const BlogDetailsInfo = () => {
                     <div className="col-xl-6">
                       <div className="blog-details__img-box-img">
                         <img
-                          src="assets/images/blog/blog-details-img-box-img-1.jpg"
+                          src="/assets/images/blog/blog-details-img-box-img-1.jpg"
                           alt=""
                         />
                       </div>
@@ -112,7 +111,7 @@ const BlogDetailsInfo = () => {
                     <div className="col-xl-6">
                       <div className="blog-details__img-box-img">
                         <img
-                          src="assets/images/blog/blog-details-img-box-img-2.jpg"
+                          src="/assets/images/blog/blog-details-img-box-img-2.jpg"
                           alt=""
                         />
                       </div>
@@ -130,7 +129,7 @@ const BlogDetailsInfo = () => {
                 </p>
                 <div className="blog-details__author-box">
                   <div className="blog-details__author-quote">
-                    <img src="assets/images/icon/quote.png" alt="" />
+                    <img src="/assets/images/icon/quote.png" alt="" />
                   </div>
                   <div className="blog-details__author-name-box">
                     <span></span>
@@ -191,7 +190,7 @@ const BlogDetailsInfo = () => {
                   </div>
                   <div className="blog-details__points-img">
                     <img
-                      src="assets/images/blog/blog-details-points-img.jpg"
+                      src="/assets/images/blog/blog-details-points-img.jpg"
                       alt=""
                     />
                   </div>
@@ -231,7 +230,7 @@ const BlogDetailsInfo = () => {
                   <div className="blog-details__prev-box">
                     <div className="blog-details__prev-img">
                       <img
-                        src="assets/images/blog/blog-details-prev-image.jpg"
+                        src="/assets/images/blog/blog-details-prev-image.jpg"
                         alt=""
                       />
                     </div>
@@ -261,7 +260,7 @@ const BlogDetailsInfo = () => {
                     </div>
                     <div className="blog-details__next-img">
                       <img
-                        src="assets/images/blog/blog-details-next-image.jpg"
+                        src="/assets/images/blog/blog-details-next-image.jpg"
                         alt=""
                       />
                     </div>
@@ -274,7 +273,7 @@ const BlogDetailsInfo = () => {
                       <div className="comment-one__author-inner">
                         <div className="comment-one__image">
                           <img
-                            src="assets/images/blog/comment-1-1.jpg"
+                            src="/assets/images/blog/comment-1-1.jpg"
                             alt=""
                           />
                         </div>
@@ -290,10 +289,7 @@ const BlogDetailsInfo = () => {
                           strong workforce?
                         </p>
                         <div className="comment-one__btn-box">
-                          <Link
-                            to="/blog-details"
-                            className="comment-one__btn"
-                          >
+                          <Link to="/blog-details" className="comment-one__btn">
                             <span className="fas fa-share"></span>Reply
                           </Link>
                         </div>
@@ -305,7 +301,7 @@ const BlogDetailsInfo = () => {
                       <div className="comment-one__author-inner">
                         <div className="comment-one__image">
                           <img
-                            src="assets/images/blog/comment-1-2.jpg"
+                            src="/assets/images/blog/comment-1-2.jpg"
                             alt=""
                           />
                         </div>
@@ -320,10 +316,7 @@ const BlogDetailsInfo = () => {
                           than a complete replacement
                         </p>
                         <div className="comment-one__btn-box">
-                          <Link
-                            to="/blog-details"
-                            className="comment-one__btn"
-                          >
+                          <Link to="/blog-details" className="comment-one__btn">
                             <span className="fas fa-share"></span>Reply
                           </Link>
                         </div>
@@ -333,7 +326,7 @@ const BlogDetailsInfo = () => {
                       <div className="comment-one__author-inner">
                         <div className="comment-one__image">
                           <img
-                            src="assets/images/blog/comment-1-3.jpg"
+                            src="/assets/images/blog/comment-1-3.jpg"
                             alt=""
                           />
                         </div>
@@ -346,10 +339,7 @@ const BlogDetailsInfo = () => {
                           risky to rely too much on AI for decision-making?
                         </p>
                         <div className="comment-one__btn-box">
-                          <Link
-                            to="/blog-details"
-                            className="comment-one__btn"
-                          >
+                          <Link to="/blog-details" className="comment-one__btn">
                             <span className="fas fa-share"></span>Reply
                           </Link>
                         </div>
@@ -364,12 +354,7 @@ const BlogDetailsInfo = () => {
                     <h3 className="contact-one__from-title">
                       How Can We Help You?
                     </h3>
-                    <form
-                      className="contact-form-validated contact-one__form"
-                      action="https://unicktheme.com/2025/techguru-html/main-html/assets/inc/sendemail.php"
-                      method="post"
-                      novalidate="novalidate"
-                    >
+                    <form className="contact-form-validated contact-one__form">
                       <div className="row">
                         <div className="col-xl-6 col-lg-6">
                           <h4 className="contact-one__input-title">
@@ -553,7 +538,7 @@ const BlogDetailsInfo = () => {
                   </li>
                   <li>
                     <div className="sidebar__post-image">
-                      <img src="assets/images/blog/blog-lp-3.jpg" alt="" />
+                      <img src="/assets/images/blog/blog-lp-3.jpg" alt="" />
                     </div>
                     <div className="sidebar__post-content">
                       <p className="sidebar__post-date">
@@ -628,7 +613,7 @@ const BlogDetailsInfo = () => {
                 <div className="sidebar__client-img-box">
                   <div className="sidebar__client-img">
                     <img
-                      src="assets/images/blog/sidebar-client-img-1.jpg"
+                      src="/assets/images/blog/sidebar-client-img-1.jpg"
                       alt=""
                     />
                   </div>
