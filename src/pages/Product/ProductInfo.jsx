@@ -245,6 +245,162 @@
 
 // export default ProductInfo;
 
+// import React, { useEffect, useState } from "react";
+// import { Link } from "react-router-dom";
+// import styled from "styled-components";
+
+// import productData from "../../productData.js";
+// import serviceData from "../../serviceData.js";
+
+// const ProductInfo = () => {
+//   const [products, setProducts] = useState([]);
+//   const [services, setServices] = useState([]);
+//   const [activeTab, setActiveTab] = useState("All");
+
+//   useEffect(() => {
+//     setProducts(productData);
+//     setServices(serviceData);
+//   }, []);
+
+//   const uniqueCategories = services.map((service) => service.title);
+
+//   const filteredProducts =
+//     activeTab === "All"
+//       ? products
+//       : products.filter((item) => item.category === activeTab);
+
+//   return (
+//     <Wrapper>
+//       <section className="product">
+//         <div className="container">
+//           <div className="row">
+//             <div className="col-xl-12 col-lg-12">
+//               <div className="product__items">
+//                 {/* Category Tabs */}
+//                 <div className="row">
+//                   <div className="col-xl-12 mb-4">
+//                     <div className="shop-category product__sidebar-single">
+//                       <h3 className="fs-4 fw-bold text-center text-uppercase mb-4">
+//                         Categories
+//                       </h3>
+
+//                       <ul className="list-unstyled d-flex gap-2 category-list row_horizon">
+//                         <li>
+//                           <button
+//                             className={`category-item ${
+//                               activeTab === "All" ? "active" : ""
+//                             }`}
+//                             onClick={() => setActiveTab("All")}
+//                           >
+//                             All
+//                           </button>
+//                         </li>
+
+//                         {uniqueCategories.map((tab, index) => (
+//                           <li key={index}>
+//                             <button
+//                               className={`category-item ${
+//                                 activeTab === tab ? "active" : ""
+//                               }`}
+//                               onClick={() => setActiveTab(tab)}
+//                             >
+//                               {tab}
+//                             </button>
+//                           </li>
+//                         ))}
+//                       </ul>
+//                     </div>
+//                   </div>
+//                 </div>
+
+//                 {/* Products Grid */}
+//                 <div className="product__all">
+//                   <div className="row">
+//                     {filteredProducts.length > 0 ? (
+//                       filteredProducts.map((product) => (
+//                         <div
+//                           key={product.id}
+//                           className="col-xl-3 col-lg-6 col-md-6"
+//                         >
+//                           <div className="single-product-style1">
+//                             <div className="single-product-style1__img">
+//                               <img src={product.image} alt="product Imagee" />
+//                               <img src={product.image} alt="product Imagee" />
+//                             </div>
+//                             <div className="single-product-style1__content">
+//                               <div className="single-product-style1__content-left text-center">
+//                                 <h4 className="heading44">
+//                                   <Link to="/product-details">
+//                                     {product.name}
+//                                   </Link>
+//                                 </h4>
+//                               </div>
+//                             </div>
+//                           </div>
+//                         </div>
+//                       ))
+//                     ) : (
+//                       <p className="text-center">No products found.</p>
+//                     )}
+//                   </div>
+//                 </div>
+//               </div>
+//             </div>
+//           </div>
+//         </div>
+//       </section>
+//     </Wrapper>
+//   );
+// };
+
+// const Wrapper = styled.section`
+//   .row_horizon {
+//     overflow-x: auto !important;
+//     flex-wrap: nowrap !important;
+//     -webkit-overflow-scrolling: touch;
+//     scrollbar-width: thin;
+//     scrollbar-color: #555555 #f1f1f1;
+//     padding-bottom: 5px;
+//   }
+
+//   .row_horizon::-webkit-scrollbar {
+//     height: 6px;
+//   }
+//   .row_horizon::-webkit-scrollbar-track {
+//     background: #f1f1f1;
+//     border-radius: 4px;
+//   }
+//   .row_horizon::-webkit-scrollbar-thumb {
+//     background: #f433a2;
+//     border-radius: 10px;
+//   }
+//   .row_horizon::-webkit-scrollbar-thumb:hover {
+//     background: #d71d8c;
+//   }
+
+//   .category-item {
+//     background: #0b192c;
+//     border: 1px solid #ddd;
+//     border-radius: 20px;
+//     padding: 8px 18px;
+//     font-size: 15px;
+//     font-weight: 600;
+//     color: #fff;
+//     white-space: nowrap;
+//     transition: all 0.3s ease;
+//     cursor: pointer;
+//   }
+
+//   .category-item:hover,
+//   .category-item.active {
+//     background: #ffc009;
+//     border-color: #ffc009;
+//     color: #fff;
+//   }
+// `;
+
+// export default ProductInfo;
+
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
@@ -260,24 +416,26 @@ const ProductInfo = () => {
   useEffect(() => {
     setProducts(productData);
     setServices(serviceData);
+
+    // ✅ Get stored category from localStorage on page load
+    const savedCategory = localStorage.getItem("activeCategory");
+    if (savedCategory) {
+      setActiveTab(savedCategory);
+    }
   }, []);
 
-  // Get categories from servicesData
+  // ✅ Handle category change & save to localStorage
+  const handleCategoryClick = (category) => {
+    setActiveTab(category);
+    localStorage.setItem("activeCategory", category);
+  };
+
   const uniqueCategories = services.map((service) => service.title);
 
-  // Filter products based on activeTab
   const filteredProducts =
     activeTab === "All"
       ? products
-      : products.filter(
-          (item) =>
-            item.category.toLowerCase() ===
-            activeTab.replace(" Supplies", "").toLowerCase() // normalize category
-        );
-
-  const handleTabChange = (tab) => {
-    setActiveTab(tab);
-  };
+      : products.filter((item) => item.category === activeTab);
 
   return (
     <Wrapper>
@@ -286,6 +444,7 @@ const ProductInfo = () => {
           <div className="row">
             <div className="col-xl-12 col-lg-12">
               <div className="product__items">
+                {/* Category Tabs */}
                 <div className="row">
                   <div className="col-xl-12 mb-4">
                     <div className="shop-category product__sidebar-single">
@@ -299,7 +458,7 @@ const ProductInfo = () => {
                             className={`category-item ${
                               activeTab === "All" ? "active" : ""
                             }`}
-                            onClick={() => handleTabChange("All")}
+                            onClick={() => handleCategoryClick("All")}
                           >
                             All
                           </button>
@@ -311,7 +470,7 @@ const ProductInfo = () => {
                               className={`category-item ${
                                 activeTab === tab ? "active" : ""
                               }`}
-                              onClick={() => handleTabChange(tab)}
+                              onClick={() => handleCategoryClick(tab)}
                             >
                               {tab}
                             </button>
@@ -322,21 +481,18 @@ const ProductInfo = () => {
                   </div>
                 </div>
 
+                {/* Products Grid */}
                 <div className="product__all">
                   <div className="row">
-                    {filteredProducts.map((product) => {
-                      return (
+                    {filteredProducts.length > 0 ? (
+                      filteredProducts.map((product) => (
                         <div
                           key={product.id}
                           className="col-xl-3 col-lg-6 col-md-6"
                         >
                           <div className="single-product-style1">
                             <div className="single-product-style1__img">
-                              <img
-                                //   src="assets/images/shop/shop-product-1-1.png"
-                                src={product.image}
-                                alt="product Imagee"
-                              />
+                              <img src={product.image} alt="product Imagee" />
                               <img src={product.image} alt="product Imagee" />
                             </div>
                             <div className="single-product-style1__content">
@@ -350,8 +506,10 @@ const ProductInfo = () => {
                             </div>
                           </div>
                         </div>
-                      );
-                    })}
+                      ))
+                    ) : (
+                      <p className="text-center">No products found.</p>
+                    )}
                   </div>
                 </div>
               </div>
@@ -410,3 +568,4 @@ const Wrapper = styled.section`
 `;
 
 export default ProductInfo;
+
