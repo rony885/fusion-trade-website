@@ -260,7 +260,19 @@
 //   useEffect(() => {
 //     setProducts(productData);
 //     setServices(serviceData);
+
+//     // ✅ Get stored category from localStorage on page load
+//     const savedCategory = localStorage.getItem("activeCategory");
+//     if (savedCategory) {
+//       setActiveTab(savedCategory);
+//     }
 //   }, []);
+
+//   // ✅ Handle category change & save to localStorage
+//   const handleCategoryClick = (category) => {
+//     setActiveTab(category);
+//     localStorage.setItem("activeCategory", category);
+//   };
 
 //   const uniqueCategories = services.map((service) => service.title);
 
@@ -290,7 +302,7 @@
 //                             className={`category-item ${
 //                               activeTab === "All" ? "active" : ""
 //                             }`}
-//                             onClick={() => setActiveTab("All")}
+//                             onClick={() => handleCategoryClick("All")}
 //                           >
 //                             All
 //                           </button>
@@ -302,7 +314,7 @@
 //                               className={`category-item ${
 //                                 activeTab === tab ? "active" : ""
 //                               }`}
-//                               onClick={() => setActiveTab(tab)}
+//                               onClick={() => handleCategoryClick(tab)}
 //                             >
 //                               {tab}
 //                             </button>
@@ -324,8 +336,8 @@
 //                         >
 //                           <div className="single-product-style1">
 //                             <div className="single-product-style1__img">
-//                               <img src={product.image} alt="product Imagee" />
-//                               <img src={product.image} alt="product Imagee" />
+//                               <img src={product.image} alt="product Image" />
+//                               <img src={product.image} alt="product Image" />
 //                             </div>
 //                             <div className="single-product-style1__content">
 //                               <div className="single-product-style1__content-left text-center">
@@ -414,23 +426,28 @@ const ProductInfo = () => {
   const [activeTab, setActiveTab] = useState("All");
 
   useEffect(() => {
-    setProducts(productData);
-    setServices(serviceData);
+  setProducts(productData);
+  setServices(serviceData);
 
-    // ✅ Get stored category from localStorage on page load
-    const savedCategory = localStorage.getItem("activeCategory");
-    if (savedCategory) {
-      setActiveTab(savedCategory);
-    }
-  }, []);
+  // ✅ Check if Products page was opened from Services
+  const savedCategory = localStorage.getItem("activeCategory");
+  if (savedCategory) {
+    setActiveTab(savedCategory);
+    localStorage.removeItem("activeCategory"); // clear immediately
+  } else {
+    setActiveTab("All"); // always default on reload or direct visit
+  }
+}, []);
 
-  // ✅ Handle category change & save to localStorage
+
+  // ✅ Handle category change
   const handleCategoryClick = (category) => {
     setActiveTab(category);
-    localStorage.setItem("activeCategory", category);
   };
 
-  const uniqueCategories = services.map((service) => service.title);
+  const uniqueCategories = [
+    ...new Set(services.map((service) => service.title)),
+  ];
 
   const filteredProducts =
     activeTab === "All"
@@ -492,8 +509,7 @@ const ProductInfo = () => {
                         >
                           <div className="single-product-style1">
                             <div className="single-product-style1__img">
-                              <img src={product.image} alt="product Imagee" />
-                              <img src={product.image} alt="product Imagee" />
+                              <img src={product.image} alt={product.name} />
                             </div>
                             <div className="single-product-style1__content">
                               <div className="single-product-style1__content-left text-center">
@@ -568,4 +584,3 @@ const Wrapper = styled.section`
 `;
 
 export default ProductInfo;
-
