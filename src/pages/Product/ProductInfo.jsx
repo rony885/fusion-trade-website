@@ -336,8 +336,8 @@
 //                         >
 //                           <div className="single-product-style1">
 //                             <div className="single-product-style1__img">
-//                               <img src={product.image} alt="product Image" />
-//                               <img src={product.image} alt="product Image" />
+//                               <img src={product.image} alt="product Imagee" />
+//                               <img src={product.image} alt="product Imagee" />
 //                             </div>
 //                             <div className="single-product-style1__content">
 //                               <div className="single-product-style1__content-left text-center">
@@ -413,6 +413,7 @@
 
 // export default ProductInfo;
 
+
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
@@ -426,33 +427,31 @@ const ProductInfo = () => {
   const [activeTab, setActiveTab] = useState("All");
 
   useEffect(() => {
-  setProducts(productData);
-  setServices(serviceData);
+    setProducts(productData);
+    setServices(serviceData);
 
-  // ✅ Check if Products page was opened from Services
-  const savedCategory = localStorage.getItem("activeCategory");
-  if (savedCategory) {
-    setActiveTab(savedCategory);
-    localStorage.removeItem("activeCategory"); // clear immediately
-  } else {
-    setActiveTab("All"); // always default on reload or direct visit
-  }
-}, []);
+    // ✅ Load saved active tab (id) from localStorage
+    const savedCategory = localStorage.getItem("activeCategory");
+    if (savedCategory) {
+      setActiveTab(savedCategory);
+    }
+  }, []);
 
-
-  // ✅ Handle category change
-  const handleCategoryClick = (category) => {
-    setActiveTab(category);
+  // ✅ Handle category click (id based)
+  const handleTabChange = (categoryId) => {
+    setActiveTab(categoryId);
+    localStorage.setItem("activeCategory", categoryId);
   };
 
-  const uniqueCategories = [
-    ...new Set(services.map((service) => service.title)),
-  ];
-
+  // ✅ Filter products by service id → match service.title with product.category
   const filteredProducts =
     activeTab === "All"
       ? products
-      : products.filter((item) => item.category === activeTab);
+      : products.filter(
+          (item) =>
+            services.find((s) => s.id.toString() === activeTab)?.title ===
+            item.category
+        );
 
   return (
     <Wrapper>
@@ -475,21 +474,21 @@ const ProductInfo = () => {
                             className={`category-item ${
                               activeTab === "All" ? "active" : ""
                             }`}
-                            onClick={() => handleCategoryClick("All")}
+                            onClick={() => handleTabChange("All")}
                           >
                             All
                           </button>
                         </li>
 
-                        {uniqueCategories.map((tab, index) => (
-                          <li key={index}>
+                        {services.map((tab) => (
+                          <li key={tab.id}>
                             <button
                               className={`category-item ${
-                                activeTab === tab ? "active" : ""
+                                activeTab === tab.id.toString() ? "active" : ""
                               }`}
-                              onClick={() => handleCategoryClick(tab)}
+                              onClick={() => handleTabChange(tab.id.toString())}
                             >
-                              {tab}
+                              {tab.title}
                             </button>
                           </li>
                         ))}
@@ -509,7 +508,8 @@ const ProductInfo = () => {
                         >
                           <div className="single-product-style1">
                             <div className="single-product-style1__img">
-                              <img src={product.image} alt={product.name} />
+                              <img src={product.image} alt="product" />
+                              <img src={product.image} alt="product" />
                             </div>
                             <div className="single-product-style1__content">
                               <div className="single-product-style1__content-left text-center">
@@ -584,3 +584,5 @@ const Wrapper = styled.section`
 `;
 
 export default ProductInfo;
+
+

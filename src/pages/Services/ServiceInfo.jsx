@@ -131,7 +131,7 @@
 
 import React, { useEffect, useState } from "react";
 import styled from "styled-components";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import serviceData from "../../serviceData.js";
 
 const Services = () => {
@@ -188,12 +188,22 @@ const Services = () => {
                 <p className="services-three__text text-white mb-4">
                   {service.text}
                 </p>
-                <button
+                {/* <button
                   onClick={() => handleServiceClick(service.title)}
                   className="services-three__btn"
                 >
                   Read More <span className="icon-right-arrow-1"></span>
-                </button>
+                </button> */}
+
+                 <Link
+                  to="/products"
+                  className="services-three__btn btn btn-warning"
+                  onClick={() =>
+                    localStorage.setItem("activeTab", service.id.toString())
+                  }
+                >
+                  Show All Product <span className="icon-right-arrow-1"></span>
+                </Link>
               </div>
             ))}
           </div>
