@@ -413,7 +413,6 @@
 
 // export default ProductInfo;
 
-
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
@@ -430,20 +429,18 @@ const ProductInfo = () => {
     setProducts(productData);
     setServices(serviceData);
 
-    // ✅ Load saved active tab (id) from localStorage
-    const savedCategory = localStorage.getItem("activeCategory");
-    if (savedCategory) {
-      setActiveTab(savedCategory);
+    // ✅ Use temporary category from Services click
+    const tempCategory = localStorage.getItem("activeTabTemp");
+    if (tempCategory) {
+      setActiveTab(tempCategory);
+      localStorage.removeItem("activeTabTemp"); // remove so reload defaults to All
     }
   }, []);
 
-  // ✅ Handle category click (id based)
   const handleTabChange = (categoryId) => {
     setActiveTab(categoryId);
-    localStorage.setItem("activeCategory", categoryId);
   };
 
-  // ✅ Filter products by service id → match service.title with product.category
   const filteredProducts =
     activeTab === "All"
       ? products
@@ -508,8 +505,8 @@ const ProductInfo = () => {
                         >
                           <div className="single-product-style1">
                             <div className="single-product-style1__img">
-                              <img src={product.image} alt="product" />
-                              <img src={product.image} alt="product" />
+                              <img src={product.image} alt={product.name} />
+                              <img src={product.image} alt={product.name} />
                             </div>
                             <div className="single-product-style1__content">
                               <div className="single-product-style1__content-left text-center">
@@ -518,6 +515,7 @@ const ProductInfo = () => {
                                     {product.name}
                                   </Link>
                                 </h4>
+                                <p>{product.category}</p>
                               </div>
                             </div>
                           </div>
@@ -584,5 +582,3 @@ const Wrapper = styled.section`
 `;
 
 export default ProductInfo;
-
-
